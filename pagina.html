@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo Del Chevy</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <a href="https://maps.app.goo.gl/TLZbrfAE7bpiAGCP9" target="_blank">
+                <img src="https://imgs.search.brave.com/fzGK7yG2mby4aQbuq6LWRmWC-iXjyCsvpnyuHnsA7Dw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzNjMwMy9p/c29sYXRlZC9wcmV2/aWV3LzdkYmZkNDhj/OTEzZGMwM2NmODM0/YWYwNTI1NDI5ODI2/LWljb25vLWRlLW1h/cmNhZG9yLWRlLXVi/aWNhY2lvbi5wbmc" alt="Ubicación" class="location-icon"> Encuentra tu tienda
+            </a>
+            <img src="tipos de carros.png" alt="Vehículos" class="vehicles-image">
+
+            <div class="contact">
+                <a href="https://wa.me/7757533192" target="_blank" class="contact-link">
+                    <img src="https://imgs.search.brave.com/3gU-bBEpuAUcBriOtS2xufJAeNf91Vnro40NXTLK5k4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZiL1doYXRzQXBw/LnN2Zw.svg" alt="WhatsApp" class="contact-icon"> WhatsApp
+                </a>
+                <a href="tel:+527757533192" class="contact-link">
+                    <img src="https://imgs.search.brave.com/NfBJCqNXlca9A9KN0OJ4jndiQd760qLwBAlbkRj93gY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzNTU3Mi9p/c29sYXRlZC9wcmV2/aWV3LzcyMTdlMzVh/MWM5YzA3MmQ4YTg4/N2NlNDJkZmNlMzBj/LWljb25vLWRlLWxs/YW1hZGEtZGUtdGVs/ZWZvbm8ucG5n" alt="Teléfono" class="contact-icon"> Llamar
+                </a>
+                <a href="mailto:elmundodelchevy@gmail.com" class="contact-link">
+                    <img src="https://imgs.search.brave.com/KrkAQBg9xrAViP7sxLad28H85g2Qac6KVoOrZI22TUk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzBiL0xvZ29fR21h/aWxfKDIwMTUtMjAy/MCkuc3Zn.svg" alt="Gmail" class="contact-icon"> Email
+                </a>
+            </div>
+        </div>
+        <div class="main-bar">
+            <div class="logo">
+                <img src="Logo Refaccionaria.png" alt="logo chevy">
+            </div>
+                
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="data:image/jpeg;base64,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" alt="Categorías" class="menu-icon"> Categorías
+                </button>
+                <div class="dropdown-content">
+                    <a href="#category1">Productos Nuevos</a>
+                    <a href="#category2">Productos Mas Vendidos</a>
+                    <a href="#category3">Marcas Que Manejamos</a>
+                </div>
+            </div>
+    </header>
+    <main>
+        <section id="category1">
+            <div class="container-mt-5">
+                <h2 class="mt-5">PRODUCTOS NUEVOS</h2>
+                <div class="products-container">
+                    <div class="products" id="products">
+                        <div class="product">
+                            <img src="imagen 1.png" class="product-image" id="01" alt="producto 1">
+                            <p>Código: 01</p>
+                            <p>KID DE AFINACION (FILTRO DE GASOLINA, BUJIAS, FILTRO DE AIRE, FILTRO DE ACEITE, ACEITE,) </p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="acdelco logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen  2.png" class="product-image" alt="Producto 2">
+                            <p>Código: 02</p>
+                            <p>ZAPATA DE FRENO</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 3.png" class="product-image" alt="Producto 3">
+                            <p>Código: 03</p>
+                            <p>BUJIA</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 4.png" class="product-image" alt="Producto 4">
+                            <p>Código: 04</p>
+                            <p>BOMBA DE AGUA</p>
+                            <img src="https://www.coxautoinc.com/wp-content/uploads/2023/10/GM-logo-Facebook.jpg" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 5.png" class="product-image" alt="Producto 5">
+                            <p>Código: 05</p>
+                            <p>CLUTCH COMPLETO CON PLATO Y COLLARIN</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2020/01/Chevrolet-Logo-2010.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 6.png" class="product-image" alt="Producto 6">
+                            <p>Código: 06</p>
+                            <p>KIT DE EMBRAGUE</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 7.png" class="product-image" alt="Producto 7">
+                            <p>Código: 07</p>
+                            <p>ACEITE A MOTOR DE GASOLINA</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen  8.png" class="product-image" alt="Producto 8">
+                            <p>Código: 08</p>
+                            <p>ACEITE PARA MOTOR A GASOLINA SINTETICO</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 9.png" class="product-image" alt="Producto 9">
+                            <p>Código: 09</p>
+                            <p>JUEGO DE CABLES DE BUJIA</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Depo Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 10.png" class="product-image" alt="Producto 10">
+                            <p>Código: 10</p>
+                            <p>CORREA DE DISTRIBUCION</p>
+                            <img src="https://www.coxautoinc.com/wp-content/uploads/2023/10/GM-logo-Facebook.jpg" alt="Depo Logo">
+                        </div>
+                    </div>
+                </div>
+            <!-- Contenido de la categoría 1 -->
+        </section>
+        <section id="category2">
+            <div class="container-mt-5">
+            <h2 class="mt-5">PRODUCTOS MÁS VENDIDOS</h2>
+                <div class="products-container">
+                    <div class="products" id="masVendidos">
+                        <div class="product">
+                            <img src="imagen  11.png" class="product-image" alt="Producto 11">
+                            <p>Código: 11</p>
+                            <p>BOBINA IGNICION</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Superlock Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 12.png" class="product-image" alt="Producto 12">
+                            <p>Código: 12</p>
+                            <p>BOBINA ENCENDIDO</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 13.png" class="product-image" alt="Producto 13">
+                            <p>Código: 13</p>
+                            <p>RETEN DE ARBOL KACO</p>
+                            <img src="https://cdn.worldvectorlogo.com/logos/delphi-2.svg" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 14.png" class="product-image" alt="Producto 14">
+                            <p>Código: 14</p>
+                            <p>REPUESTO BOMBA DE GASOLINA</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 15.png" class="product-image" alt="Producto 15">
+                            <p>Código: 15</p>
+                            <p>ANTICONGELANTE</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 16.png" class="product-image" alt="Producto 16">
+                            <p>Código: 16</p>
+                            <p>PAR DE AMORTIGUADORES DELANTEROS</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2020/01/Chevrolet-Logo-2010.png" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 17.png" class="product-image" alt="Producto 17">
+                            <p>Código: 17</p>
+                            <p>RADIADOR</p>
+                            <img src="https://cdn.worldvectorlogo.com/logos/delphi-2.svg" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 18.png" class="product-image" alt="Producto 18">
+                            <p>Código: 18</p>
+                            <p>KIT DE JUNTAS DE MOTOR MPFI CON RETENES Y LIGAS TOP ENGINE</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1epEOwWwRJPYLsyoD0jwz-C9tPFddfzS0MA&s" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen 19.png" class="product-image" alt="Producto 19">
+                            <p>Código: 19</p>
+                            <p>DEPOSITO DE AGUA</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1epEOwWwRJPYLsyoD0jwz-C9tPFddfzS0MA&s" alt="Cable Logo">
+                        </div>
+                        <div class="product">
+                            <img src="imagen  20.png" class="product-image" alt="Producto 20">
+                            <p>Código: 20</p>
+                            <p>JUEGO KIT MANGUERAS DE AGUA, VALVULA Y CALEFACCION DE 3 SALIDAS</p>
+                            <img src="https://1000marcas.net/wp-content/uploads/2020/01/Chevrolet-Logo-2010.png" alt="Cable Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido de la categoría 2 -->
+        </section>
+        <section id="category3">
+            <div class="container-mt-5">
+                <h2 class="mt-5">NUESTRAS MARCAS</h2>
+                <div class="products-container">
+                    <div class="marcas" id="marcas">
+                        <div class="log">
+                            <img src="https://www.coxautoinc.com/wp-content/uploads/2023/10/GM-logo-Facebook.jpg" class="log-img" alt="marca 1">
+                        </div>
+                        <div class="log">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1epEOwWwRJPYLsyoD0jwz-C9tPFddfzS0MA&s" class="log-img" alt="marca 3">
+                    </div>
+                        <div class="log">
+                            <img src="https://1000marcas.net/wp-content/uploads/2020/01/Chevrolet-Logo-2010.png" class="log-img" alt="marca 2">
+                        </div>
+                       
+                    <div class="log">
+                        <img src="https://1000marcas.net/wp-content/uploads/2021/05/ACDelco-Logo.png" class="log-img" alt="marca 4">
+                </div>
+                <div class="log">
+                    <img src="https://cdn.worldvectorlogo.com/logos/delphi-2.svg" class="log-img" alt="marca 5">
+            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido de la categoría 3 -->
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Logo Refaccionaria.png" alt="logo chevy">
+            </div>
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="#category1">Productos Nuevos</a></li>
+                    <li><a href="#category2">Productos Mas Vendidos</a></li>
+                    <li><a href="#category3">Marcas Que Manejamos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/TLZbrfAE7bpiAGCP9">
+                        <img src="https://imgs.search.brave.com/fzGK7yG2mby4aQbuq6LWRmWC-iXjyCsvpnyuHnsA7Dw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzNjMwMy9p/c29sYXRlZC9wcmV2/aWV3LzdkYmZkNDhj/OTEzZGMwM2NmODM0/YWYwNTI1NDI5ODI2/LWljb25vLWRlLW1h/cmNhZG9yLWRlLXVi/aWNhY2lvbi5wbmc" alt="Ubicación" class="location-icon"> Encuentra tu tienda</a></li>
+                    <li><a href="https://wa.me/7757533192" target="_blank">
+                        <img src="https://imgs.search.brave.com/3gU-bBEpuAUcBriOtS2xufJAeNf91Vnro40NXTLK5k4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzZiL1doYXRzQXBw/LnN2Zw.svg" alt="WhatsApp" class="footer-icon"> +52 775 753 3192</a></li>
+                    <li><a href="tel:+527757533192">
+                        <img src="https://imgs.search.brave.com/NfBJCqNXlca9A9KN0OJ4jndiQd760qLwBAlbkRj93gY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzNTU3Mi9p/c29sYXRlZC9wcmV2/aWV3LzcyMTdlMzVh/MWM5YzA3MmQ4YTg4/N2NlNDJkZmNlMzBj/LWljb25vLWRlLWxs/YW1hZGEtZGUtdGVs/ZWZvbm8ucG5n" alt="Teléfono" class="footer-icon"> +52 775 753 3192</a></li>
+                    <li><a href="mailto:elmundodelchevy@gmail.com">
+                        <img src="https://imgs.search.brave.com/KrkAQBg9xrAViP7sxLad28H85g2Qac6KVoOrZI22TUk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8w/LzBiL0xvZ29fR21h/aWxfKDIwMTUtMjAy/MCkuc3Zn.svg" alt="Gmail" class="footer-icon"> elmundodelchevy@gmail.com</a></li>
+                </ulte>
+            </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="script.js"></script>
+           
+</body>
+</html>
